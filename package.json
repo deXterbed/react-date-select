@@ -1,6 +1,6 @@
 {
   "name": "react-date-select",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "A select box alternative to react datepicker",
   "author": "deXterbed",
   "license": "MIT",
@@ -25,6 +25,10 @@
   },
   "peerDependencies": {
     "react": "^16.0.0"
+  },
+  "dependencies": {
+    "date-fns": "^2.0.1",
+    "prop-types": "^15.7.2"
   },
   "devDependencies": {
     "microbundle-crl": "^0.13.10",

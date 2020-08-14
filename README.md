@@ -14,13 +14,21 @@ npm install --save react-date-select
 
 ```jsx
 import React, { Component } from 'react'
+import DateSelect from 'react-date-select'
 
-import MyComponent from 'react-date-select'
-import 'react-date-select/dist/index.css'
+class App extends Component {
+  state = {
+    date: new Date()
+  }
 
-class Example extends Component {
   render() {
-    return <MyComponent />
+    return <DateSelect onChange={this.handleChange} />
+  }
+
+  handleChange = date => {
+    this.setState({
+      date
+    })
   }
 }
 ```

@@ -1,10 +1,20 @@
-import React from 'react'
+import React, { Component } from 'react'
+import DateSelect from 'react-date-select'
 
-import { ExampleComponent } from 'react-date-select'
-import 'react-date-select/dist/index.css'
+class App extends Component {
+  state = {
+    date: new Date()
+  }
 
-const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  render() {
+    return <DateSelect onChange={this.handleChange} />
+  }
+
+  handleChange = date => {
+    this.setState({
+      date
+    })
+  }
 }
 
 export default App
